@@ -11,6 +11,7 @@ int main()
     float num1 = 0;
     float num2 = 0;
     int retorno;
+    float resultado;
 
 
     while(seguir=='s')
@@ -41,11 +42,13 @@ int main()
                 scanf("%f", &num2);
                 break;
             case 3:
-                Suma(num1, num2);
+                resultado = Suma(num1, num2);
+                printf(" La Suma es : %.2f\n", resultado);
 
                 break;
             case 4:
-                Resta(num1, num2);
+                resultado = Resta(num1, num2);
+                printf(" La Resta es : %.2f\n", resultado);
 
                 break;
             case 5:
@@ -56,12 +59,17 @@ int main()
                 Division(num1, num2);
                 break;
             case 6:
+                Multiplicacion(num1, num2);
                 break;
             case 7:
                 Factorial(num1);
 
                 break;
             case 8:
+
+
+
+
                 break;
             case 9:
                 seguir = 'n';
@@ -76,14 +84,15 @@ float Suma(float num1, float num2)
 {
     float retorno;
     retorno = num1 + num2;
-    printf(" La Suma es : %.2f\n", retorno);
+    return retorno;
+    //printf(" La Suma es : %.2f\n", retorno);
 }
 
 float Resta(float num1, float num2)
 {
     float retorno;
     retorno = num1 - num2;
-    printf(" La Resta es : %.2f\n", retorno);
+    return retorno;
 }
 
 float Division(float num1, float num2)
@@ -92,6 +101,14 @@ float Division(float num1, float num2)
     retorno = num1 / num2;
     printf(" La Division es : %.3f\n", retorno);
 }
+
+float Multiplicacion(float num1, float num2)
+{
+    float retorno;
+    retorno = num1 * num2;
+    printf(" La Multiplicacion es : %.3f\n", retorno);
+}
+
 float Factorial(float num1)
 {   float factorial = 1;
     float i = num1;

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1523370771 source:c:\users\ramir\documents\proyectos de c\tp 1\programacion1y-laboratorio1-master\programacion1y-laboratorio1-master\tp_1_cascara\tp_1_cascara\main.c
+1523373789 source:c:\users\ramir\documents\proyectos de c\tp 1\programacion1y-laboratorio1-master\programacion1y-laboratorio1-master\tp_1_cascara\tp_1_cascara\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"
