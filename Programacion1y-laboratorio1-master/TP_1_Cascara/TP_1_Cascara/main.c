@@ -92,15 +92,14 @@ float Division(float num1, float num2)
     retorno = num1 / num2;
     printf(" La Division es : %.3f\n", retorno);
 }
-int Factorial(int num1)
-{   int factorial = 1;
-    int retorno;
-    int i;
-     for (i = num1; i>=1; i--)
+float Factorial(float num1)
+{   float factorial = 1;
+    float i = num1;
+    for (; i>=1; i--)
     {
-        retorno = factorial * i;
+        factorial = factorial * i;
 
     }
-    printf(" El factorial del numero A es: %d\n", retorno);
+    printf(" El factorial del numero A es: %f\n", factorial);
 
 }

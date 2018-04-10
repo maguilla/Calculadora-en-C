@@ -8,4 +8,4 @@ float Suma(float, float);
 float Resta(float, float);
 float Division(float, float);
 float Multiplicacion(float, float);
-int Factorial(int);
+float Factorial(float);
