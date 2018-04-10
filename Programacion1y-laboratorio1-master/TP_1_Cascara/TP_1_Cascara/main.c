@@ -12,6 +12,7 @@ int main()
     float num2 = 0;
     int retorno;
 
+
     while(seguir=='s')
     {
         printf("1- Ingresar 1er operando (A=%.2f)\n", num1);
@@ -57,6 +58,8 @@ int main()
             case 6:
                 break;
             case 7:
+                Factorial(num1);
+
                 break;
             case 8:
                 break;
@@ -88,4 +91,16 @@ float Division(float num1, float num2)
     float retorno;
     retorno = num1 / num2;
     printf(" La Division es : %.3f\n", retorno);
+}
+int Factorial(int num1)
+{   int factorial = 1;
+    int retorno;
+    int i;
+     for (i = num1; i>=1; i--)
+    {
+        retorno = factorial * i;
+
+    }
+    printf(" El factorial del numero A es: %d\n", retorno);
+
 }
